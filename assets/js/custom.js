@@ -97,3 +97,31 @@ $(document).ready(function () {
         }
     });
 });
+$(document).ready(function() {
+   console.log('hello world');
+$('.scrollTop').html('<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44" height="44">\n' +
+    '\t<title>ff-svg</title>\n' +
+    '\t<style>\n' +
+    '\t\t.s0 { fill: none;stroke: #ffffff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3 } \n' +
+    '\t</style>\n' +
+    '\t<path id="Layer" class="s0" d="m14.9 24.5l7.1-7 7.1 7"></path>\n' +
+    '</svg>')
+    window.onscroll = function() {myFunction()};
+
+// Get the header
+
+
+// Get the offset position of the navbar
+    let sticky =  $(".header-navfullwidth").offset().top +50;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            $(".header-navfullwidth").addClass("sticky");
+            $("#logo-stick").show();
+        } else {
+            $(".header-navfullwidth").removeClass("sticky");
+            $("#logo-stick").hide();
+        }
+    }
+});

@@ -1024,7 +1024,16 @@ body#checkout section.checkout-step #invoice-address, body#checkout section.chec
 /*megamenu*/ 
 @media(min-width: 768px) {
     #header .navbar-block .top-menu .level0.current > a {
-        color: #227ed1;
+        background-color: #fff;
+        border: none;
+        color: black;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
     }
     #header .navbar-block .top-menu .level0 > a {
         position: relative;
